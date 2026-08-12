@@ -1,15 +1,16 @@
 {
   "name": "apply-to-jobs",
   "displayName": "Apply to jobs",
+  "version": "1.0.0",
   "description": "Turn one job posting into one strong application: read the posting the way the screening software reads it, tailor the resume against evidence the candidate actually has, write a cover letter that survives a cliche filter, submit on the employer's own hiring system, and keep a receipt.",
-  "author": "AI Applyd",
-  "category": "productivity",
-  "homepage": "https://github.com/whateverneveranywhere/aiapplyd-skills",
-  "source": {
-    "source": "git-subdir",
-    "url": "https://github.com/whateverneveranywhere/aiapplyd-skills",
-    "path": "skills/apply-to-jobs",
-    "ref": "main"
+  "author": {
+    "name": "AI Applyd",
+    "url": "https://aiapplyd.com"
   },
-  "skills": ["apply-to-jobs"]
+  "homepage": "https://github.com/whateverneveranywhere/aiapplyd-skills",
+  "repository": "https://github.com/whateverneveranywhere/aiapplyd-skills",
+  "license": "MIT",
+  "skills": [
+    "./skills/apply-to-jobs"
+  ]
 }
