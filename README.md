@@ -14,7 +14,13 @@ account, no key, nothing to install.
 
 ## Using a skill
 
-**Claude Code** — clone into your skills directory:
+**Fastest — any agent** (Claude Code, Codex, Cursor, Copilot, Zed, Amp and more):
+
+```bash
+npx skills add whateverneveranywhere/aiapplyd-skills
+```
+
+**Claude Code** — or clone into your skills directory:
 
 ```bash
 git clone https://github.com/whateverneveranywhere/aiapplyd-skills.git
