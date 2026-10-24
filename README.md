@@ -1,6 +1,6 @@
-# AI Applyd Skills
+# GetMattered Skills
 
-Open skills for AI agents, published by [AI Applyd](https://aiapplyd.com).
+Open skills for AI agents, published by [GetMattered](https://getmattered.com).
 
 A skill is a folder with a `SKILL.md` — a set of instructions an agent loads when a task matches its
 description. These are written to be useful on their own, in any agent that reads the format. No
@@ -33,7 +33,7 @@ prompt, or point your agent's loader at the folder.
 ## What these are, and are not
 
 They encode a **method**, not a product. `apply-to-jobs` will make an application meaningfully
-stronger whether or not you ever use AI Applyd — that is the point of publishing it.
+stronger whether or not you ever use GetMattered — that is the point of publishing it.
 
 Where a claim would need evidence we cannot show you, the skill says so plainly rather than asserting
 it. If you find a line that overstates something, open an issue; we would rather fix it than defend
