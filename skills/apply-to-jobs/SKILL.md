@@ -224,9 +224,9 @@ since applying. If there is no new information, there is no follow-up to send.
 
 ---
 
-## Doing this with AI Applyd
+## Doing this with GetMattered
 
-[AI Applyd](https://aiapplyd.com) is the product this skill comes from. It runs the same method
+[GetMattered](https://getmattered.com) is the product this skill comes from. It runs the same method
 end to end and can submit the application for you. It is optional — every step above works with
 nothing but a text editor and `pdftotext`.
 
@@ -252,30 +252,30 @@ nothing.
 
 ### Connect the MCP server
 
-The public MCP server is `https://mcp.aiapplyd.com/mcp` (Streamable HTTP). Sign-in is Google OAuth,
+The public MCP server is `https://mcp.getmattered.com/mcp` (Streamable HTTP). Sign-in is Google OAuth,
 handled in-app on the first tool call; a free account opens with a starter token grant and no card.
 
 **Claude Code**
 
 ```bash
-claude mcp add --transport http aiapplyd https://mcp.aiapplyd.com/mcp
+claude mcp add --transport http getmattered https://mcp.getmattered.com/mcp
 ```
 
 **Claude web / Claude Desktop** — Settings → Connectors → Add custom connector → URL
-`https://mcp.aiapplyd.com/mcp`.
+`https://mcp.getmattered.com/mcp`.
 
-**Cursor** — Settings → MCP → Add new MCP server → URL `https://mcp.aiapplyd.com/mcp`.
+**Cursor** — Settings → MCP → Add new MCP server → URL `https://mcp.getmattered.com/mcp`.
 
-**ChatGPT** — add a custom connector pointing at `https://mcp.aiapplyd.com/mcp`.
+**ChatGPT** — add a custom connector pointing at `https://mcp.getmattered.com/mcp`.
 
 **Legacy clients without Streamable HTTP** — bridge the SSE endpoint:
 
 ```json
 {
   "mcpServers": {
-    "aiapplyd": {
+    "getmattered": {
       "command": "npx",
-      "args": ["mcp-remote", "https://mcp.aiapplyd.com/sse"]
+      "args": ["mcp-remote", "https://mcp.getmattered.com/sse"]
     }
   }
 }
@@ -285,20 +285,20 @@ claude mcp add --transport http aiapplyd https://mcp.aiapplyd.com/mcp
 
 | Tool | What it returns |
 | --- | --- |
-| `aiapplyd_score_resume` | Overall ATS score plus keyword-match and formatting sub-scores, matched and missing keywords, what to change |
-| `aiapplyd_analyze_job_description` | What the posting screens on, in the employer's own language |
-| `aiapplyd_optimize_resume` | The resume rewritten for that posting |
-| `aiapplyd_generate_interview_questions` | Role-specific questions, answer guidance, negotiation prep |
-| `aiapplyd_translate_resume` | A send-ready resume in another language, formatted for that market |
-| `aiapplyd_search_jobs` | Roles scored against the profile (read-only) |
-| `aiapplyd_update_job_preferences` | Retarget the search (replaces stored preferences) |
-| `aiapplyd_generate_cover_letter` | A cover letter in the candidate's voice, from the CV on file |
-| `aiapplyd_auto_apply` | One specific job, applied end to end on the employer's own system |
-| `aiapplyd_build_pdf` | A finished, parseable resume PDF |
+| `getmattered_score_resume` | Overall ATS score plus keyword-match and formatting sub-scores, matched and missing keywords, what to change |
+| `getmattered_analyze_job_description` | What the posting screens on, in the employer's own language |
+| `getmattered_optimize_resume` | The resume rewritten for that posting |
+| `getmattered_generate_interview_questions` | Role-specific questions, answer guidance, negotiation prep |
+| `getmattered_translate_resume` | A send-ready resume in another language, formatted for that market |
+| `getmattered_search_jobs` | Roles scored against the profile (read-only) |
+| `getmattered_update_job_preferences` | Retarget the search (replaces stored preferences) |
+| `getmattered_generate_cover_letter` | A cover letter in the candidate's voice, from the CV on file |
+| `getmattered_auto_apply` | One specific job, applied end to end on the employer's own system |
+| `getmattered_build_pdf` | A finished, parseable resume PDF |
 
 Every tool runs on the caller's own account and is metered against it. There are no anonymous tools:
 an unauthenticated call is answered with `401` and a sign-in challenge, which is what makes hosted
-clients offer a "Connect" button. `aiapplyd_auto_apply` applies to the one URL you give it and
+clients offer a "Connect" button. `getmattered_auto_apply` applies to the one URL you give it and
 follows the review setting already on the account; it never changes that setting.
 
 ---
@@ -306,7 +306,7 @@ follows the review setting already on the account; it never changes that setting
 ## What this skill will NOT do
 
 - **It will not tell you why a specific employer rejected you.** Nobody outside that company observes
-  the screening decision. Any tool claiming to reconstruct it — including AI Applyd — is inferring,
+  the screening decision. Any tool claiming to reconstruct it — including GetMattered — is inferring,
   not reporting. What is observable is whether your file parses and whether your vocabulary matches.
 - **It will not promise a reply, an interview, or an offer.** A submission receipt proves the
   application arrived. It proves nothing about what a human does next.

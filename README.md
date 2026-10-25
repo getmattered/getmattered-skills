@@ -17,14 +17,14 @@ account, no key, nothing to install.
 **Fastest — any agent** (Claude Code, Codex, Cursor, Copilot, Zed, Amp and more):
 
 ```bash
-npx skills add whateverneveranywhere/aiapplyd-skills
+npx skills add getmattered/getmattered-skills
 ```
 
 **Claude Code** — or clone into your skills directory:
 
 ```bash
-git clone https://github.com/whateverneveranywhere/aiapplyd-skills.git
-cp -r aiapplyd-skills/skills/apply-to-jobs ~/.claude/skills/
+git clone https://github.com/getmattered/getmattered-skills.git
+cp -r getmattered-skills/skills/apply-to-jobs ~/.claude/skills/
 ```
 
 **Anything else** — `SKILL.md` is plain Markdown with YAML frontmatter. Paste it into your system
