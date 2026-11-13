@@ -1,8 +1,8 @@
 {
-  "name": "apply-to-jobs",
-  "displayName": "Apply to jobs",
-  "version": "1.0.0",
-  "description": "Turn one job posting into one strong application: read the posting the way the screening software reads it, tailor the resume against evidence the candidate actually has, write a cover letter that survives a cliche filter, submit on the employer's own hiring system, and keep a receipt.",
+  "name": "getmattered-skills",
+  "displayName": "GetMattered skills",
+  "version": "1.18.0",
+  "description": "The workflow skills of the GetMattered MCP server: find matching jobs, apply on the employer's own hiring system, review and send, track applications, answer recruiters, follow up and prepare for interviews.",
   "author": {
     "name": "GetMattered",
     "url": "https://getmattered.com"
@@ -11,6 +11,19 @@
   "repository": "https://github.com/getmattered/getmattered-skills",
   "license": "MIT",
   "skills": [
-    "./skills/apply-to-jobs"
+    "./skills/apply-to-a-job",
+    "./skills/build-resume-document",
+    "./skills/find-matching-jobs",
+    "./skills/follow-up-on-applications",
+    "./skills/handle-recruiter-replies",
+    "./skills/manage-saved-searches",
+    "./skills/prepare-for-interview",
+    "./skills/review-and-send",
+    "./skills/setup-job-search",
+    "./skills/tailor-for-a-job",
+    "./skills/track-applications",
+    "./skills/translate-resume",
+    "./skills/using-getmattered",
+    "./skills/write-cover-letter"
   ]
 }
