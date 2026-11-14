@@ -1,6 +1,6 @@
 # GetMattered skills
 
-The workflow skills of the [GetMattered MCP server](https://github.com/getmattered/getmattered-mcp), version 1.19.1. Each folder holds one `SKILL.md`: the steps an assistant follows with the GetMattered tools for one part of a job search.
+The workflow skills of the [GetMattered MCP server](https://github.com/getmattered/getmattered-mcp), version 1.19.2. Each folder holds one `SKILL.md`: the steps an assistant follows with the GetMattered tools for one part of a job search.
 
 This repository is rewritten by every release of getmattered-mcp, so it always matches the live server. Please open issues and pull requests on [getmattered/getmattered-mcp](https://github.com/getmattered/getmattered-mcp) instead.
 
@@ -18,7 +18,7 @@ This repository is rewritten by every release of getmattered-mcp, so it always m
 | [`review-and-send`](skills/review-and-send/SKILL.md) | Review the applications GetMattered prepared, change them, and send the ones the user approves. |
 | [`setup-job-search`](skills/setup-job-search/SKILL.md) | Set up a GetMattered account for job matching with the user's resume and job preferences. |
 | [`tailor-for-a-job`](skills/tailor-for-a-job/SKILL.md) | Score and tailor the user's resume to one job posting with GetMattered. |
-| [`track-applications`](skills/track-applications/SKILL.md) | Check where the user's job applications stand with GetMattered, which employers confirmed them, and how many applications and credits the user has left. |
+| [`track-applications`](skills/track-applications/SKILL.md) | Check where the user's job applications stand with GetMattered, which employers confirmed them, and how many applications and tokens the user has left. |
 | [`translate-resume`](skills/translate-resume/SKILL.md) | Translate a saved GetMattered resume-builder document into another language. |
 | [`using-getmattered`](skills/using-getmattered/SKILL.md) | Map of the GetMattered tools. |
 | [`write-cover-letter`](skills/write-cover-letter/SKILL.md) | Write or revise a cover letter for one job with GetMattered. |
