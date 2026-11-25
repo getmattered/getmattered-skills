@@ -1,6 +1,6 @@
 # GetMattered skills
 
-The workflow skills of the [GetMattered MCP server](https://github.com/getmattered/getmattered-mcp), version 1.21.5. Each folder holds one `SKILL.md`: the steps an assistant follows with the GetMattered tools for one part of a job search.
+The workflow skills of the [GetMattered MCP server](https://github.com/getmattered/getmattered-mcp), version 1.21.6. Each folder holds one `SKILL.md`: the steps an assistant follows with the GetMattered tools for one part of a job search.
 
 This repository is rewritten by every release of getmattered-mcp, so it always matches the live server. Please open issues and pull requests on [getmattered/getmattered-mcp](https://github.com/getmattered/getmattered-mcp) instead.
 
